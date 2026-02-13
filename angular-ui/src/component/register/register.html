@@ -1,0 +1,27 @@
+<main class="register-page">
+  <section class="register-card">
+    <h1>Create Account</h1>
+    <p class="subtitle">Register to get started</p>
+
+    <form class="register-form" (submit)="onSubmit($event)">
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" placeholder="Enter username" [(ngModel)]="username" required="please enter a username"/>
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" placeholder="Enter password" [(ngModel)]="password" required="please enter a password"/>
+
+      <label for="confirmPassword">Confirm Password</label>
+      <input
+        id="confirmPassword"
+        name="confirmPassword"
+        type="password"
+        placeholder="Confirm password"
+        [(ngModel)]="confirmPassword"
+        required="please confirm your password"
+      />
+
+      <button type="submit" class="btn btn-primary">Register</button>
+      <button type="button" class="btn btn-secondary" (click)="onBack()">Back</button>
+    </form>
+  </section>
+</main>

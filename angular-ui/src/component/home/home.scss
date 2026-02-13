@@ -1,0 +1,67 @@
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
+.home-page {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top left, #dbeafe 0, transparent 45%),
+    radial-gradient(circle at bottom right, #fef3c7 0, transparent 40%),
+    linear-gradient(135deg, #f8fafc, #eef2ff);
+}
+
+.home-card {
+  width: min(100%, 560px);
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #dbeafe;
+  border-radius: 18px;
+  padding: 36px 28px;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2563eb;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.9rem, 4vw, 2.4rem);
+  color: #0f172a;
+}
+
+.subtitle {
+  margin: 12px 0 0;
+  color: #475569;
+  font-size: 1rem;
+}
+
+.info {
+  margin: 16px 0 0;
+  color: #334155;
+}
+
+.info-label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.token {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}

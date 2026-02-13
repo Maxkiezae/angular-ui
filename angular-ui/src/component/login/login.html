@@ -1,0 +1,17 @@
+<main class="login-page">
+  <section class="login-card">
+    <h1>Welcome Back</h1>
+    <p class="subtitle">Sign in to continue</p>
+
+    <form class="login-form" (submit)="onSubmit($event)">
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" placeholder="Enter username" [(ngModel)]="username" />
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" placeholder="Enter password" [(ngModel)]="password" />
+
+      <button type="submit" class="btn btn-primary">Login</button>
+      <button type="button" class="btn btn-secondary" (click)="onRegister()">Register</button>
+    </form>
+  </section>
+</main>
