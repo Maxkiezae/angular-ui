@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { RegisterInterface } from '../../service/interface-app/register-interface';
+import { RegisterRequest } from '../../service/interface-model/request/register-request.interface';
 
 @Component({
   selector: 'app-register',
@@ -24,7 +25,7 @@ export class Register {
     this.registerInterface.register({
       username: this.username,
       password: this.password
-    }).subscribe({
+    } as RegisterRequest).subscribe({
       next: (response) => {
         if (response.statusCode === 200) {
           alert('Registration successful! Please log in.');
