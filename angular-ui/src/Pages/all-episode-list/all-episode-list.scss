@@ -1,0 +1,55 @@
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 16px;
+  color: #1f2937;
+  text-align: center;
+}
+
+.episode-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.episode-item {
+  width: 100%;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid #dbe4f0;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  font: inherit;
+  color: #111827;
+  cursor: pointer;
+}
+
+.episode-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+@media (max-width: 1023px) {
+  .episode-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .page-title {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+  }
+
+  .episode-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .episode-item {
+    padding: 12px;
+  }
+}

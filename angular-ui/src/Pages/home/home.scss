@@ -1,0 +1,48 @@
+﻿.home-page {
+  width: min(1200px, 100% - 32px);
+  margin: 24px auto;
+  padding-bottom: 88px;
+}
+
+.project-footer {
+  width: min(1200px, 100% - 32px);
+  margin: 0;
+  padding: 14px 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(15, 23, 42, 0.42);
+  color: #f8fafc;
+  text-align: center;
+  border-radius: 12px;
+  backdrop-filter: blur(2px);
+  position: fixed;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.project-footer p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.project-footer small {
+  display: block;
+  margin-top: 4px;
+  opacity: 0.9;
+}
+
+@media (max-width: 767px) {
+  .home-page {
+    width: calc(100% - 20px);
+    margin: 12px auto;
+    padding-bottom: 84px;
+  }
+
+  .project-footer {
+    width: calc(100% - 20px);
+    margin: 0;
+    padding: 12px;
+    bottom: 10px;
+  }
+}
